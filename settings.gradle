@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Crud2019'
+rootProject.name='CrudMySQLAndroid'
