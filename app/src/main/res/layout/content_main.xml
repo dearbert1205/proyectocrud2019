@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#303F50"
+    android:background="#DF8604"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -34,55 +34,51 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:src="@drawable/mysql2"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                />
+                android:src="@drawable/mysql2" />
 
             <EditText
                 android:id="@+id/et_codigo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el código"
-                android:inputType="number"
-                android:background="@drawable/estiloedittext"
-                android:shadowRadius="5"
-                android:paddingLeft="25dp"
-                android:drawableStart="@drawable/ic_hola"
-                android:drawablePadding="5dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
-                />
+                android:layout_marginRight="15dp"
+                android:background="@drawable/estiloedittext"
+                android:drawableStart="@drawable/ic_hola"
+                android:drawablePadding="5dp"
+                android:hint="Ingrese el código"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:shadowRadius="5" />
 
             <EditText
                 android:id="@+id/et_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese la descripción del artículo"
-                android:layout_marginRight="12dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
                 android:drawableStart="@drawable/ic_descripcion"
                 android:drawablePadding="5dp"
-                />
+                android:hint="Ingrese la descripción del artículo"
+                android:paddingLeft="25dp" />
 
             <EditText
                 android:id="@+id/et_precio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese el precio del artículo"
-                android:layout_marginRight="12dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="20dp"
-                android:inputType="numberDecimal"
+                android:layout_marginRight="12dp"
                 android:background="@drawable/estiloedittext"
-                android:paddingLeft="25dp"
                 android:drawableStart="@drawable/ic_precio"
                 android:drawablePadding="5dp"
-                />
+                android:hint="Ingrese el precio del artículo"
+                android:inputType="numberDecimal"
+                android:paddingLeft="25dp" />
 
 
             <Button
@@ -90,87 +86,82 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="30dp"
-                android:text="Guardar"
-                android:textColor="#0A0A0A"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
-                android:shadowColor="#2314A8"
+                android:drawableRight="@drawable/ic_save"
+                android:drawablePadding="-140dp"
+                android:paddingRight="100dp"
+                android:shadowColor="#F39305"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:drawableRight="@drawable/ic_save"
-                android:paddingRight="100dp"
-                android:drawablePadding="-140dp"
-                />
+                android:text="Guardar"
+                android:textColor="#EB0707" />
 
             <Button
                 android:id="@+id/btn_consultaCodigo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Consultar por código"
-                android:textColor="#0E0D0D"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="-40dp"
+                android:paddingLeft="80dp"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:drawableStart="@drawable/ic_search"
-                android:paddingLeft="80dp"
-                android:drawablePadding="-40dp"
-                />
+                android:text="Consultar por código"
+                android:textColor="#EB0707" />
 
             <Button
                 android:id="@+id/btn_consultaDescripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Consultar por descrición"
-                android:textColor="#0A0A0A"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                />
+                android:text="Consultar por descrición"
+                android:textColor="#EB0707" />
 
             <Button
                 android:id="@+id/btn_eliminar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Borrar"
-                android:textColor="#070707"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/estiloboton"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                />
+                android:text="Borrar"
+                android:textColor="#EB0707" />
 
             <Button
                 android:id="@+id/btn_actualizar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:text="Editar"
-                android:textColor="#070707"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/estiloboton"
                 android:shadowColor="#2314A8"
                 android:shadowDx="-3"
                 android:shadowDy="0"
                 android:shadowRadius="8"
-                android:layout_marginBottom="20dp"
-                />
+                android:text="Editar"
+                android:textColor="#EB0707" />
 
         </LinearLayout>
     </ScrollView>
