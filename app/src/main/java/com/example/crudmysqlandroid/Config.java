@@ -3,7 +3,6 @@ package com.example.crudmysqlandroid;
 public class Config {
 
     //URL PARA ACCESO REMOTA A BASE DE DATOS MYSQL DEL SERVIDOR DEL PROF. GÁMEZ EN LA NUBE.
-    /*
     ///
     public static final String urlGuardar = "http://mjgl.com.sv/mysqlcrud/guardar.php";                               //Guardar datos DB.
     public static final String urlEliminar = "http://mjgl.com.sv/mysqlcrud/eliminar.php";                             //Eliminar datos DB.
