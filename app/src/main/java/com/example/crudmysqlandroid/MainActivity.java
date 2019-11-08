@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity{
         toolbar.setTitleMargin(0, 0, 0, 0);
         toolbar.setSubtitle("CRUD MySQL~2019");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.mycolor));
-        toolbar.setTitle("Prof. Gámez");
+        toolbar.setTitle("Jorge.Lopez");
         setSupportActionBar(toolbar);
 
         ///y esto para pantalla completa (oculta incluso la barra de estado)
@@ -334,6 +334,9 @@ public class MainActivity extends AppCompatActivity{
             return true;
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
+
+        } else if(id == R.id.action_acercade){
+                DialogConfirmacion1();
             return true;
         }
 
@@ -366,6 +369,29 @@ public class MainActivity extends AppCompatActivity{
         dialogo.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogo, int id) {
                 Toast.makeText(getApplicationContext(), "Operación Cancelada.", Toast.LENGTH_LONG).show();
+            }
+        });
+        dialogo.show();
+    }
+    private void DialogConfirmacion1(){
+        //startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        String mensaje2 = "CREADO POR: JORGE NOLBERTO LOPEZ";
+        dialogo = new AlertDialog.Builder(MainActivity.this);
+        dialogo.setIcon(R.drawable.ic_search);
+        dialogo.setTitle("ACERCA DE");
+        dialogo.setMessage(mensaje2);
+        dialogo.setCancelable(false);
+        dialogo.setPositiveButton("Salir", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogo, int id) {
+                /*Intent intent = new Intent(DashboardLuces.this, luces_control_sms.class);
+                startActivity(intent);*/
+                MainActivity.this.finishAffinity();
+                //MainActivity.this.finish();
+            }
+        });
+        dialogo.setNegativeButton("Volver", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogo, int id) {
+                Toast.makeText(getApplicationContext(), "dearbert.", Toast.LENGTH_LONG).show();
             }
         });
         dialogo.show();

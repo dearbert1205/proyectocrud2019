@@ -21,7 +21,11 @@
         android:orderInCategory="3"
         android:title="@string/salir"
         app:showAsAction="never" />
-
+    <item
+        android:id="@+id/action_acercade"
+        android:orderInCategory="2"
+        android:title="Acerca de"
+        app:showAsAction="never" />
 
     <!--<item
         android:id="@+id/action_listaArticulos1"
